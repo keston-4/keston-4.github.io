@@ -1,12 +1,13 @@
 import { useId } from 'react'
 
-export function Section({ title, children }) {
+export function Section({ title, colour, children }) {
   let id = useId()
-
+  // className={`md:border-l md:${colour || 'border-zinc-100'} md:pl-6 md:dark:${colour || 'border-zinc-700'}/40`}
+  console.log(colour)
   return (
     <section
       aria-labelledby={id}
-      className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40"
+      className={`md:border-l md:${colour || 'border-zinc-100'} md:pl-6 md:dark:${colour || 'border-zinc-700'}/40 ${colour}`}
     >
       <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
         <h2
