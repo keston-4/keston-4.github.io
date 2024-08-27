@@ -48,9 +48,18 @@ Card.Title = function CardTitle({ as, href, children }) {
   )
 }
 
+Card.Subtitle = function CardSubtitle({ left, right }) {
+  return (
+    <div className="relative z-10 mt-1 flex items-center justify-between w-full text-sm text-zinc-600 dark:text-zinc-400 font-semibold">
+      <span>{left}</span>
+      <span>{right}</span>
+    </div>
+  )
+}
+
 Card.Description = function CardDescription({ children }) {
   return (
-    <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+    <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 text-justify">
       {children}
     </p>
   )
