@@ -3,7 +3,7 @@ import { useId } from 'react'
 export function Section({ title, colour, icon, children }) {
   let id = useId()
   // className={`md:border-l md:${colour || 'border-zinc-100'} md:pl-6 md:dark:${colour || 'border-zinc-700'}/40`}
-  console.log(colour)
+
   return (
     <section
       aria-labelledby={id}

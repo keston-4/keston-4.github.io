@@ -28,62 +28,120 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 const content = {
   experience: [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'Qrious',
+      title: 'Solution Consultant',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoPlanetaria,
-      date: '2019 — Present',
+      date: 'Dec 2022 — Present',
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Deloitte',
+      title: 'Senior Consultant',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoAirbnb,
-      date: '2014 - 2019',
+      date: 'Feb 2020 - Nov 2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'FNZ',
+      title: 'Software Engineer (Intern)',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
-      date: '2011 - 2014',
+      date: 'Nov 2019 - Feb 2020',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'University of Otago',
+      title: 'Student IT Adviser',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoStarbucks,
-      date: '2008 - 2011',
+      date: 'Jan 2019 - Dec 2019',
+    },
+    {
+      company: 'Deloitte',
+      title: 'Consultant (Intern)',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoStarbucks,
+      date: 'Nov 2018 - Feb 2019',
+    },
+    {
+      company: 'Foodstuff North Island',
+      title: 'Software Engineer (Intern)',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoStarbucks,
+      date: 'Nov 2017 - Feb 2018',
     },
   ],
   education: [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'University of Otago',
+      title: 'Bachelor of Commerce, Information Science',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoPlanetaria,
-      date: '2008 - 2011',
+      date: 'Feb 2015 - Nov 2019',
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Otaru University of Commerce',
+      title: 'Bachelor of Commerce (Exchange)',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoAirbnb,
-      date: '2008 - 2011',
+      date: 'Feb 2018 - Aug 2018',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'University of Otago',
+      title: 'Bachelor of Science, Computer Science',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
-      date: '2008 - 2011',
+      date: 'Feb 2015 - Nov 2017',
+    },
+  ],
+  awards: [
+    {
+      company: 'New Zealand Government',
+      title: 'COVID-19 Response Recognition Award',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoPlanetaria,
+      date: 'May 2023',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'University of Otago',
+      title: 'Scholarship in Commerce',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoStarbucks,
-      date: '2008 - 2011',
+      logo: logoFacebook,
+      date: 'Nov 2019',
+    },
+    {
+      company: 'Education New Zealand',
+      title: 'Prime Minister\'s Scholarship for Asia',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoAirbnb,
+      date: 'Dec 2017',
+    },
+    {
+      company: 'Japan Student Services Organisation (JASSO)',
+      title: 'JASSO Scholarship',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoFacebook,
+      date: 'Dec 2017',
+    },
+    {
+      company: 'University of Otago',
+      title: 'Scholarship in Science',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoFacebook,
+      date: 'Dec 2017',
+    },
+    {
+      company: 'University of Otago',
+      title: 'Dean\'s List',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoFacebook,
+      date: 'Nov 2015, Nov 2016',
+    },
+    {
+      company: 'University of Otago',
+      title: 'Dux Scholarship',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      logo: logoFacebook,
+      date: 'Feb 2015',
     },
   ]
 }
@@ -209,12 +267,6 @@ function SocialLink({ icon: Icon, ...props }) {
 function SocialLinks(){
   return (
     <div className="mt-6 flex gap-6">
-      <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
-      <SocialLink
-        href="#"
-        aria-label="Follow on Instagram"
-        icon={InstagramIcon}
-      />
       <SocialLink
         href="#"
         aria-label="Follow on GitHub"
@@ -234,8 +286,8 @@ export default async function Home() {
   return (
     <>
     <SimpleLayout
-      title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      title="Resume"
+      intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci."
       social={<SocialLinks/>}
     >
       
@@ -250,6 +302,13 @@ export default async function Home() {
         </ToolsSection>
         <ToolsSection title="Education" colour="border-blue-500">
           {content.education.map((item, index) => (
+            <Tool title={item.company} subleft={item.title} subright={item.date} key={index}>
+              {item.description}
+            </Tool>
+          ))}
+        </ToolsSection>
+        <ToolsSection title="Awards & Honours" colour="border-blue-500">
+          {content.awards.map((item, index) => (
             <Tool title={item.company} subleft={item.title} subright={item.date} key={index}>
               {item.description}
             </Tool>
