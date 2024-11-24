@@ -24,48 +24,56 @@ import { formatDate } from '@/lib/formatDate'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
+//import url constants from common.js
+import { GITHUB_URL, LINKEDIN_URL } from '@/lib/common'
 
 const content = {
   experience: [
     {
       company: 'Qrious',
       title: 'Solution Consultant',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoPlanetaria,
       date: 'Dec 2022 — Present',
     },
     {
       company: 'Deloitte',
       title: 'Senior Consultant',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoAirbnb,
       date: 'Feb 2020 - Nov 2022',
     },
     {
       company: 'FNZ',
       title: 'Software Engineer (Intern)',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
       date: 'Nov 2019 - Feb 2020',
     },
     {
       company: 'University of Otago',
       title: 'Student IT Adviser',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoStarbucks,
       date: 'Jan 2019 - Dec 2019',
     },
     {
       company: 'Deloitte',
       title: 'Consultant (Intern)',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoStarbucks,
       date: 'Nov 2018 - Feb 2019',
     },
     {
       company: 'Foodstuff North Island',
       title: 'Software Engineer (Intern)',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoStarbucks,
       date: 'Nov 2017 - Feb 2018',
     },
@@ -74,21 +82,24 @@ const content = {
     {
       company: 'University of Otago',
       title: 'Bachelor of Commerce, Information Science',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoPlanetaria,
       date: 'Feb 2015 - Nov 2019',
     },
     {
       company: 'Otaru University of Commerce',
       title: 'Bachelor of Commerce (Exchange)',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoAirbnb,
       date: 'Feb 2018 - Aug 2018',
     },
     {
       company: 'University of Otago',
       title: 'Bachelor of Science, Computer Science',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
       date: 'Feb 2015 - Nov 2017',
     },
@@ -97,59 +108,66 @@ const content = {
     {
       company: 'New Zealand Government',
       title: 'COVID-19 Response Recognition Award',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoPlanetaria,
       date: 'May 2023',
     },
     {
       company: 'University of Otago',
       title: 'Scholarship in Commerce',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
       date: 'Nov 2019',
     },
     {
       company: 'Education New Zealand',
-      title: 'Prime Minister\'s Scholarship for Asia',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      title: "Prime Minister's Scholarship for Asia",
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoAirbnb,
       date: 'Dec 2017',
     },
     {
       company: 'Japan Student Services Organisation (JASSO)',
       title: 'JASSO Scholarship',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
       date: 'Dec 2017',
     },
     {
       company: 'University of Otago',
       title: 'Scholarship in Science',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
       date: 'Dec 2017',
     },
     {
       company: 'University of Otago',
-      title: 'Dean\'s List',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      title: "Dean's List",
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
       date: 'Nov 2015, Nov 2016',
     },
     {
       company: 'University of Otago',
       title: 'Dux Scholarship',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
       logo: logoFacebook,
       date: 'Feb 2015',
     },
-  ]
+  ],
 }
 
 function ToolsSection({ colour, icon, children, ...props }) {
   return (
     <Section colour={colour} {...props} icon={icon}>
-      <ul role="list" className='space-y-16'>
+      <ul role="list" className="space-y-16">
         {children}
       </ul>
     </Section>
@@ -162,12 +180,11 @@ function Tool({ title, subleft, subright, href, children }) {
       <Card.Title as="h3" href={href}>
         {title}
       </Card.Title>
-      <Card.Subtitle left={subleft} right={subright}/>
+      <Card.Subtitle left={subleft} right={subright} />
       <Card.Description>{children}</Card.Description>
     </Card>
   )
 }
-
 
 export const metadata = {
   title: 'Uses',
@@ -220,7 +237,7 @@ function BriefcaseIcon(props) {
   )
 }
 
-function EducationIcon(props){
+function EducationIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -231,12 +248,11 @@ function EducationIcon(props){
       aria-hidden="true"
       {...props}
     >
-    
-      <path 
-      stroke-linecap="round" 
-      stroke-linejoin="round" 
-      className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" 
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
       />
     </svg>
   )
@@ -263,17 +279,16 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-
-function SocialLinks(){
+function SocialLinks() {
   return (
     <div className="mt-6 flex gap-6">
       <SocialLink
-        href="#"
+        href={GITHUB_URL}
         aria-label="Follow on GitHub"
         icon={GitHubIcon}
       />
       <SocialLink
-        href="#"
+        href={LINKEDIN_URL}
         aria-label="Follow on LinkedIn"
         icon={LinkedInIcon}
       />
@@ -282,40 +297,52 @@ function SocialLinks(){
 }
 
 export default async function Home() {
-    
   return (
     <>
-    <SimpleLayout
-      title="Resume"
-      intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci."
-      social={<SocialLinks/>}
-    >
-      
-      <div className="space-y-20">
-        <ToolsSection title="Experience" colour="border-blue-500" >
-          {content.experience.map((item, index) => (
-            <Tool title={item.company} subleft={item.title} subright={item.date} key={index}>
-              {item.description}
-            </Tool>
-          ))}
-          
-        </ToolsSection>
-        <ToolsSection title="Education" colour="border-blue-500">
-          {content.education.map((item, index) => (
-            <Tool title={item.company} subleft={item.title} subright={item.date} key={index}>
-              {item.description}
-            </Tool>
-          ))}
-        </ToolsSection>
-        <ToolsSection title="Awards & Honours" colour="border-blue-500">
-          {content.awards.map((item, index) => (
-            <Tool title={item.company} subleft={item.title} subright={item.date} key={index}>
-              {item.description}
-            </Tool>
-          ))}
-        </ToolsSection>
-      </div>
-    </SimpleLayout>
+      <SimpleLayout
+        title="Resume"
+        intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci."
+        social={<SocialLinks />}
+      >
+        <div className="space-y-20">
+          <ToolsSection title="Experience" colour="border-blue-500">
+            {content.experience.map((item, index) => (
+              <Tool
+                title={item.company}
+                subleft={item.title}
+                subright={item.date}
+                key={index}
+              >
+                {item.description}
+              </Tool>
+            ))}
+          </ToolsSection>
+          <ToolsSection title="Education" colour="border-blue-500">
+            {content.education.map((item, index) => (
+              <Tool
+                title={item.company}
+                subleft={item.title}
+                subright={item.date}
+                key={index}
+              >
+                {item.description}
+              </Tool>
+            ))}
+          </ToolsSection>
+          <ToolsSection title="Awards & Honours" colour="border-blue-500">
+            {content.awards.map((item, index) => (
+              <Tool
+                title={item.company}
+                subleft={item.title}
+                subright={item.date}
+                key={index}
+              >
+                {item.description}
+              </Tool>
+            ))}
+          </ToolsSection>
+        </div>
+      </SimpleLayout>
     </>
   )
 }
