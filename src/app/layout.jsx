@@ -5,12 +5,11 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Spencer Sharp',
-    default:
-      'Spencer Sharp - Software designer, founder, and amateur astronaut',
+    template: '%s - Kurt Weston',
+    default: 'Kurt Weston',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'I’m Kurt, a tech enthusiast and adventurer currently based in London. I’m passionate about exploring the world, connecting with people, and diving into creative projects that merge technology and fun. Whether I’m gaming, learning something new, or hacking away at a golf course, I love embracing challenges and making the most of every moment.',
 }
 
 export default function RootLayout({ children }) {

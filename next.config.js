@@ -6,7 +6,6 @@ let nextConfig = {
 }
 
 if (isProd) {
-  console.log('IS PROD')
   nextConfig = {
     ...nextConfig,
     output: 'export',

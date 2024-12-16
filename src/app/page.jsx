@@ -16,6 +16,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import { GITHUB_URL, LINKEDIN_URL } from '@/lib/common'
+import { heading, subtitle, shortDescription } from '@/lib/common'
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -58,13 +59,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software designer, founder, and amateur astronaut.
+            {subtitle}
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            {shortDescription}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
