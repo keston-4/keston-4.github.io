@@ -19,5 +19,6 @@
     "no-unused-vars": "off", //disable unused vars
     "react/prop-types": "off" //disable props validation
 
+
   }
 }
