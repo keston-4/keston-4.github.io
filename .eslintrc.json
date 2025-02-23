@@ -1,3 +1,21 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react"],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/no-unresolved": "off", // Disable the rule that checks for unresolved imports
+    "react/react-in-jsx-scope": "off", // Disable the rule that requires React to be in scope
+    "react/jsx-uses-react": "off", // Disable the rule that checks for React being in scope
+    "no-unused-vars": "off" //disable unused vars
+  }
 }

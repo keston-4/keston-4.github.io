@@ -1,26 +1,13 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
-
-import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
-import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  XIcon,
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import { formatDate } from '@/lib/formatDate'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -33,49 +20,17 @@ const content = {
       company: 'Qrious',
       title: 'Solution Consultant',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoPlanetaria,
+        'Focused on pre-sales, partner engagement, and enterprise data solutions, working with big names like Snowflake, Databricks, and AWS. Built expertise in data analytics and AI, helping large enterprises modernise their data architectures.',
+      logo: null,
       date: 'Dec 2022 — Present',
     },
     {
       company: 'Deloitte',
       title: 'Senior Consultant',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoAirbnb,
+        'Delivered key projects in technology strategy and transformation, including a major COVID-19 engagement. Wore multiple hats as a Business Analyst, Technical Lead, and Functional Lead, working across different public sector projects.',
+      logo: null,
       date: 'Feb 2020 - Nov 2022',
-    },
-    {
-      company: 'FNZ',
-      title: 'Software Engineer (Intern)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoFacebook,
-      date: 'Nov 2019 - Feb 2020',
-    },
-    {
-      company: 'University of Otago',
-      title: 'Student IT Adviser',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoStarbucks,
-      date: 'Jan 2019 - Dec 2019',
-    },
-    {
-      company: 'Deloitte',
-      title: 'Consultant (Intern)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoStarbucks,
-      date: 'Nov 2018 - Feb 2019',
-    },
-    {
-      company: 'Foodstuff North Island',
-      title: 'Software Engineer (Intern)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoStarbucks,
-      date: 'Nov 2017 - Feb 2018',
     },
   ],
   education: [
@@ -83,7 +38,7 @@ const content = {
       company: 'University of Otago',
       title: 'Bachelor of Commerce, Information Science',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+        'Studied information systems, business intelligence, and data analytics, developing skills in data modelling, software development, and enterprise IT.',
       logo: logoPlanetaria,
       date: 'Feb 2015 - Nov 2019',
     },
@@ -91,7 +46,7 @@ const content = {
       company: 'Otaru University of Commerce',
       title: 'Bachelor of Commerce (Exchange)',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+        'Spent six months in Japan studying business, law, and economics, gaining global perspectives and adapting to a new academic environment and culture.',
       logo: logoAirbnb,
       date: 'Feb 2018 - Aug 2018',
     },
@@ -99,7 +54,7 @@ const content = {
       company: 'University of Otago',
       title: 'Bachelor of Science, Computer Science',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+        'Focused on software engineering, algorithms, and computational theory, gaining hands-on experience with programming and system design.',
       logo: logoFacebook,
       date: 'Feb 2015 - Nov 2017',
     },
@@ -109,7 +64,7 @@ const content = {
       company: 'New Zealand Government',
       title: 'COVID-19 Response Recognition Award',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+        'Awarded for contributions to New Zealand’s COVID-19 response, recognising efforts in public sector support.',
       logo: logoPlanetaria,
       date: 'May 2023',
     },
@@ -117,7 +72,7 @@ const content = {
       company: 'University of Otago',
       title: 'Scholarship in Commerce',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
+        'Merit-based scholarship awarded for academic excellence in BCom (Information Science) studies, supporting post-graduate education at the University of Otago.',
       logo: logoFacebook,
       date: 'Nov 2019',
     },
@@ -125,43 +80,44 @@ const content = {
       company: 'Education New Zealand',
       title: "Prime Minister's Scholarship for Asia",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoAirbnb,
+        'Government-funded scholarship supporting study and cultural exchange to Japan, awarded to high-achieving students for international learning experiences.',
+      logo: null,
       date: 'Dec 2017',
     },
     {
       company: 'Japan Student Services Organisation (JASSO)',
       title: 'JASSO Scholarship',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoFacebook,
+        'Awarded by JASSO to support international students studying in Japan, recognising academic achievement and fostering global education.',
+      logo: null,
       date: 'Dec 2017',
     },
     {
       company: 'University of Otago',
       title: 'Scholarship in Science',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoFacebook,
+        'Merit-based scholarship awarded for academic excellence in BSc (Computer Science) studies, supporting spost-graduate education at the University of Otago',
+      logo: null,
       date: 'Dec 2017',
     },
     {
       company: 'University of Otago',
       title: "Dean's List",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoFacebook,
+        'Recognition for outstanding academic performance, awarded to students in the top percentage of their cohort at the University of Otago.',
+      logo: null,
       date: 'Nov 2015, Nov 2016',
     },
     {
       company: 'University of Otago',
       title: 'Dux Scholarship',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci.',
-      logo: logoFacebook,
+        'Awarded to the highest-achieving student in secondary school, recognising exceptional academic performance across multiple subjects.',
+      logo: null,
       date: 'Feb 2015',
     },
   ],
+
 }
 
 function ToolsSection({ colour, icon, children, ...props }) {
@@ -187,8 +143,8 @@ function Tool({ title, subleft, subright, href, children }) {
 }
 
 export const metadata = {
-  title: 'Uses',
-  description: 'Software I use, gadgets I love, and other things I recommend.',
+  title: 'Resume',
+  description: 'A bit about what I do.',
 }
 
 function MailIcon(props) {
@@ -301,7 +257,7 @@ export default async function Home() {
     <>
       <SimpleLayout
         title="Resume"
-        intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet ante eget imperdiet feugiat. Proin ullamcorper, est nec mattis bibendum, dolor tellus euismod tortor, vitae dictum ante turpis eget leo. Suspendisse vestibulum vitae ligula sed porta. Duis luctus risus sed pretium dapibus. Quisque sapien lacus, tristique et dignissim non, tincidunt eu elit. Ut a auctor orci."
+        intro="This page gives a quick overview of my experience, education, and some awards I’m proud of. For a more detailed view, check out my LinkedIn, and for my (public) projects, head over to my GitHub — I'm working on making more of my personal projects visible!"
         social={<SocialLinks />}
       >
         <div className="space-y-20">
