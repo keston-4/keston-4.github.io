@@ -8,8 +8,8 @@ export const ADDRESS = ''
 export const RESUME_URL = ''
 
 export const shortDescription =
-  'I’m Kurt, a tech enthusiast and adventurer currently based in London. I’m passionate about exploring the world, connecting with people, and diving into creative projects that merge technology and fun. Whether I’m gaming, learning something new, or hacking away at a golf course, I love embracing challenges and making the most of every moment.'
+  'I’m Kurt, a Kiwi tech enthusiast currently based in London. I love exploring the world beyond my remote home, connecting with people, and working on fun tech projects. Whether I’m gaming, picking up something new, or hacking away on the golf course, I’m always up for a challenge and a bit of fun!'
 export const heading = 'Kurt Weston - Tech Enthusiast & Things'
 export const subtitle =
-  'Software engineer, technology consultant, and adventurer.'
+  'Software engineer, tech consultant, and traveller.'
 export const altTitle = 'I’m Kurt. I live in London, where I do cool things.'

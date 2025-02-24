@@ -4,10 +4,6 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -39,7 +35,7 @@ const content = {
       title: 'Bachelor of Commerce, Information Science',
       description:
         'Studied information systems, business intelligence, and data analytics, developing skills in data modelling, software development, and enterprise IT.',
-      logo: logoPlanetaria,
+      logo: null,
       date: 'Feb 2015 - Nov 2019',
     },
     {
@@ -47,7 +43,7 @@ const content = {
       title: 'Bachelor of Commerce (Exchange)',
       description:
         'Spent six months in Japan studying business, law, and economics, gaining global perspectives and adapting to a new academic environment and culture.',
-      logo: logoAirbnb,
+      logo: null,
       date: 'Feb 2018 - Aug 2018',
     },
     {
@@ -55,7 +51,7 @@ const content = {
       title: 'Bachelor of Science, Computer Science',
       description:
         'Focused on software engineering, algorithms, and computational theory, gaining hands-on experience with programming and system design.',
-      logo: logoFacebook,
+      logo: null,
       date: 'Feb 2015 - Nov 2017',
     },
   ],
@@ -65,7 +61,7 @@ const content = {
       title: 'COVID-19 Response Recognition Award',
       description:
         'Awarded for contributions to New Zealand’s COVID-19 response, recognising efforts in public sector support.',
-      logo: logoPlanetaria,
+      logo: null,
       date: 'May 2023',
     },
     {
@@ -73,7 +69,7 @@ const content = {
       title: 'Scholarship in Commerce',
       description:
         'Merit-based scholarship awarded for academic excellence in BCom (Information Science) studies, supporting post-graduate education at the University of Otago.',
-      logo: logoFacebook,
+      logo: null,
       date: 'Nov 2019',
     },
     {
@@ -257,7 +253,7 @@ export default async function Home() {
     <>
       <SimpleLayout
         title="Resume"
-        intro="This page gives a quick overview of my experience, education, and some awards I’m proud of. For a more detailed view, check out my LinkedIn, and for my (public) projects, head over to my GitHub — I'm working on making more of my personal projects visible!"
+        intro="This page gives a quick overview of my experience, education, and awards I’m proud of. For a more comprehensive view, check out my LinkedIn, and for my (public) projects, head over to the Projects page — I'm working on making more of my personal projects visible!"
         social={<SocialLinks />}
       >
         <div className="space-y-20">
