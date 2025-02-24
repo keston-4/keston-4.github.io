@@ -1,42 +1,24 @@
-# Spotlight
+# Welcome!
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+This is my own personal site to showcase my experience and cool projects. It is intended to be light touch and expandable. You can access the website under the URL: [keston-4.github.io](https://keston-4.github.io).
 
-## Getting started
+The stack is Next.JS + TailwindCSS and is deployed using Github Actions as a Github Page.
 
-To get started with this template, first install the npm dependencies:
+Strangely, this static website even though Next.JS is not usually used this way. But the intent here is for extensibility, and future use with Vercel (if needed). But for now, this is OK!
 
-```bash
-npm install
-```
+## Template
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+The source template is from the amazing Tailwind UI (see [Tailwind UI](https://tailwindui.com)). They have a plethora of beautiful components and templates which are awesome for projects. This particular template is called "Spotlight" which I have torn apart and cleaned up for this specific use case.
 
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
+## Also see
+To learn more about the technologies used in this repository, see the following resources:
 
-Next, run the development server:
-
-```bash
-npm run dev
-```
-
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+- [Tailwind UI](https://tailwindui.com)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Next.js](https://nextjs.org)
+- [Headless UI](https://headlessui.dev)
+- [MDX](https://mdxjs.com)
 
 ## License
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+The site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
