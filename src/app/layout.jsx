@@ -5,8 +5,8 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Kurt Weston',
-    default: 'Kurt Weston',
+    template: '%s - Kurt',
+    default: 'Kurt',
   },
   description:
     'I’m Kurt, a tech enthusiast and adventurer currently based in London. I’m passionate about exploring the world, connecting with people, and diving into creative projects that merge technology and fun. Whether I’m gaming, learning something new, or hacking away at a golf course, I love embracing challenges and making the most of every moment.',
