@@ -5,6 +5,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoSaySoV1 from '@/images/logos/sayso-logo-v1.png'
 import logoSaySoV2 from '@/images/logos/sayso-logo-v2.png'
 import logoAutoStop from '@/images/logos/auto-stop-logo.png'
+import logoGithub from '@/images/logos/github-logo.png'
 
 const projects = [
   {
@@ -28,6 +29,13 @@ const projects = [
     link: { href: '#', label: '(Repo tidy-up WIP)' },
     logo: logoSaySoV1,
   },
+  {
+    name: 'Github Pages (this!)',
+    description:
+      'This is the site you’re on right now! It’s a static site hosted on Github Pages. It’s built with Next.js, which is strange for a static site - but it’s a fun experiment!',
+    link: { href: 'https://github.com/keston-4/keston-4.github.io', label: 'github.com' },
+    logo: logoGithub,
+  },
 ]
 
 function LinkIcon(props) {
@@ -43,13 +51,13 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I\'ve put into the world.',
+  description: 'Things I\'ve put together.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I've put into the world."
+      title="Things I've put together."
       intro="I’ve worked on many little projects over the years but these are the ones that I’m most proud of. I’m working still tidying up the code and documentation for some of these, so check back soon for updates."
     >
       <ul
