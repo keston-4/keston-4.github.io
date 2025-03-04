@@ -18,7 +18,7 @@ const content = {
       description:
         'Focused on pre-sales, partner engagement, and enterprise data solutions, working with big names like Snowflake, Databricks, and AWS. Built expertise in data analytics and AI, helping large enterprises modernise their data architectures.',
       logo: null,
-      date: 'Dec 2022 — Present',
+      date: 'Dec 2022 — Dec 2024',
     },
     {
       company: 'Deloitte',
